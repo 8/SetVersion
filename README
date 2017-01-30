@@ -1,0 +1,17 @@
+SetVersion.exe is a cmdline tool that sets the version of an assembly.
+
+Call it without parameters or with --help to get the help
+
+setversion
+  -i=VALUE                   the input file to load
+  -o=VALUE                   the output file to save
+  -v, ----version=VALUE      the version string
+  -l, ----list               list the versions
+  -s                         set the version
+  -h, ----help               prints the help
+
+For example:
+```
+setversion -i=SampleApplication.exe -o=SampleApplication_out.exe -s -v 1.2.3.4
+```
+to set create a copy of 'SampleApplication.exe' named 'SampleApplication_out.exe' and set it's version number to '1.2.3.4'.
